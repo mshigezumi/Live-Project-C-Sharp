@@ -5,7 +5,7 @@
 For the last two weeks with the Tech Academy I worked on a Live Project in C# which simulated a real world work environment in which I worked with my peers and staff to do work on a website for an actual customer. We used ASP.NET MVC with Bootstrap 4 and Entity Framework to help create the website. I worked on a variety of stories with most of them focusing on the BlogPost section of the website. Below are some code snippets of the stories I worked on, full code files are also available in this repository.
 
 ## BlogPost Create/Edit Pages
-Two seperate stories included these pages, first was creating and scafolding the CRUD pages, second was formating and implementing the basic functionality of the create and edit pages. Both of these pages are very similar so they were part of the same stories.
+Two seperate stories included these pages, first was creating and scafolding the CRUD pages, second was styling and implementing the basic functionality of the create and edit pages. Both of these pages are very similar so they were part of the same stories.
 
 ~~~
 <div class="blog-post-div">
@@ -65,7 +65,7 @@ Two seperate stories included these pages, first was creating and scafolding the
 ~~~
 
 ## BlogPost Index Page
-Three seperate stories included this page, first was creating and scafolding the CRUD pages, second was formating and implementing the basic functionality of the index page (showing the blog posts, getting buttons to work), third was formating and implementing a confirm delete modal and an alert with javascript/jQuery for extra funcationality.
+Three seperate stories included this page, first was creating and scafolding the CRUD pages, second was styling and implementing the basic functionality of the index page (showing the blog posts, getting buttons to work), third was styling and implementing a confirm delete modal and an alert with javascript/jQuery for extra funcationality.
 
 ~~~
 <!-- Alert -->
@@ -163,7 +163,7 @@ Three seperate stories included this page, first was creating and scafolding the
 ~~~
 
 ## BlogPost Details/Delete Pages
-Two seperate stories included these pages, first was creating and scafolding the CRUD pages, second was formating and implementing the basic functionality of the details and delete pages. Both of these pages are very similar so they were part of the same stories.
+Two seperate stories included these pages, first was creating and scafolding the CRUD pages, second was styling and implementing the basic functionality of the details and delete pages. Both of these pages are very similar so they were part of the same stories.
 
 ~~~
 <div class="blog-post-div">
@@ -207,4 +207,55 @@ Two seperate stories included these pages, first was creating and scafolding the
 ~~~
 
 ## Blog.css
-The CSS used for all these files is stored in the Blog.css file, this in combination with Bootstrap 4 formated the page to the required specifications.
+The CSS used for all these files is stored in the Blog.css file, this in combination with Bootstrap 4 styled the BlogPost pages to the required specifications.
+
+~~~
+.blog-post-modal-content {
+    background-color: #333333;
+    border: 0;
+    box-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-modal-header {
+    border-bottom: 0;
+}
+
+.blog-post-close {
+    color: var(--light-color);
+    text-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-modal-footer {
+    border-top: 0;
+}
+
+.blog-post-hide {
+    display: none;
+}
+
+.blog-post-alert {
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.blog-post-alert-text {
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog-post-alert-fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
+}
+
+.blog-post-alert-fade.in {
+    opacity: 1;
+}
+~~~
+
+## Other Stories
+I also worked on a few other stories, including creating and scafolding the model and CRUD pages for BlogPost, making the rental area dropdown for the navbar, and working on creating and seeding the PostMaster for BlogPost.
