@@ -1,10 +1,12 @@
 # Live Project
  
-## Introduction
+## Introduction:
 
 For the last two weeks with the Tech Academy I worked on a Live Project in C# which simulated a real world work environment in which I worked with my peers and staff to do work on a website for an actual customer. We used ASP.NET MVC with Bootstrap 4 and Entity Framework to help create the website. I worked on a variety of stories with most of them focusing on the BlogPost section of the website. Below are some code snippets of the stories I worked on, full code files are also available in this repository.
 
-## BlogPost Create/Edit Pages
+## Pages and Stories:
+
+### BlogPost Create/Edit Pages
 Two seperate stories included these pages, first was creating and scafolding the CRUD pages, second was styling and implementing the basic functionality of the create and edit pages. Both of these pages are very similar so they were part of the same stories.
 
 ~~~
@@ -64,7 +66,7 @@ Two seperate stories included these pages, first was creating and scafolding the
 }
 ~~~
 
-## BlogPost Index Page
+### BlogPost Index Page
 Three seperate stories included this page, first was creating and scafolding the CRUD pages, second was styling and implementing the basic functionality of the index page (showing the blog posts, getting buttons to work), third was styling and implementing a confirm delete modal and an alert with javascript/jQuery for extra funcationality.
 
 ~~~
@@ -162,7 +164,7 @@ Three seperate stories included this page, first was creating and scafolding the
 </script>
 ~~~
 
-## BlogPost Details/Delete Pages
+### BlogPost Details/Delete Pages
 Two seperate stories included these pages, first was creating and scafolding the CRUD pages, second was styling and implementing the basic functionality of the details and delete pages. Both of these pages are very similar so they were part of the same stories.
 
 ~~~
@@ -206,7 +208,7 @@ Two seperate stories included these pages, first was creating and scafolding the
 </div>
 ~~~
 
-## Blog.css
+### Blog.css
 The CSS used for all these files is stored in the Blog.css file, this in combination with Bootstrap 4 styled the BlogPost pages to the required specifications.
 
 ~~~
@@ -257,5 +259,5 @@ The CSS used for all these files is stored in the Blog.css file, this in combina
 }
 ~~~
 
-## Other Stories
+### Other Stories
 I also worked on a few other stories, including creating and scafolding the model and CRUD pages for BlogPost, making the rental area dropdown for the navbar, and working on creating and seeding the PostMaster for BlogPost.
