@@ -1,0 +1,44 @@
+﻿@model TheatreCMS3.Areas.Blog.Models.BlogPost
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="blog-post-div">
+    <h2 class="blog-post-header">Delete this Blog Post?</h2>
+</div>
+
+<div class="blog-post-card-container">
+    <div class="card blog-post-card">
+        <div class="no-gutters">
+            <div class="blog-post-div">
+                <h4 class="blog-post-spacer">@Html.DisplayFor(model => model.Title)</h4>
+                <div class="blog-post-card-image">
+                    <img src="https://picsum.photos/500" class="img-fluid " alt="">
+                </div>
+            </div>
+            <div class="blog-post-spacer2">
+                <div class="blog-post-card-text-container2">
+                    <p class="text-muted">by @Html.DisplayFor(model => model.Author)</p>
+                    <p class="text-muted">@Html.DisplayFor(model => model.Posted)</p>
+                    <p class="card-text blog-post-spacer2">@Html.DisplayFor(model => model.Content)</p>
+                </div>
+                <div class="row blog-post-card-button-container2">
+                    <div class="col-8 blog-post-card-button-container-left blog-post-no-padding">
+                        <!-- need to find way to make this look good on mobile too -->
+                        <a href="@Url.Action("Index", new {  })" class="btn blog-post-button3 col-4"><i class="fas fa-chevron-left"></i> Back</a>
+                        <a href="@Url.Action("Edit", new { id = Model.BlogPostId })" class="btn blog-post-button3 col-4"><i class="fas fa-edit"></i> Edit</a>
+                    </div>
+                    <div class="col-4 blog-post-card-button-container-right blog-post-no-padding">
+                        <!-- need to find way to make this look good on mobile too -->
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn blog-post-button4 col-8"><i class="fas fa-trash"></i> Delete</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

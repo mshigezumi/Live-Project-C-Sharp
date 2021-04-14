@@ -1,0 +1,258 @@
+﻿/* ▼ This ▼ is for you to easily reference the colors on the Site.css page */
+/* Do not uncomment these color variables */
+
+/* CSS color variables */
+/*:root { /* Color palette for css */
+/*--main-color: #DB1A11;  Red */
+/*--main-color--light: #F04D44;*/ /* Red, a shade lighter */
+/*--secondary-color: #D6972A;*/ /* Yellow gold */
+/*--light-color: #FFFBFB;*/ /* White */
+/*--dark-color: #000000;*/ /* Black */
+/*--secondary-color--dark: #9D7C39;*/ /* Dark Gold */
+/*}*/
+
+/* BLOG POST */
+
+.blog-post-form {
+    margin: 0 auto;
+    max-width: 80%;
+    /* width: 50%; idealy when the screen gets bigger the width is set to 50% so it doesn't look too wide. */
+    background-color: #333333;
+    box-shadow: 0 0 0.5rem 0 var(--secondary-color);
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.blog-post-header {
+    color: var(--secondary-color);
+}
+
+.blog-post-button {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-weight: bold;
+    min-width: 30%;
+}
+
+.blog-post-button:hover {
+    color: var(--dark-color);
+    box-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-button2 {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    font-weight: bold;
+    min-width: 30%;
+}
+
+.blog-post-button2:hover {
+    color: var(--dark-color);
+    box-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-button3 {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-weight: bold;
+    /*width: auto;
+    max-width: 200px;*/
+}
+
+.blog-post-button3:hover {
+    color: var(--dark-color);
+    box-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-button4 {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    font-weight: bold;
+    /*width: auto;
+    max-width: 200px;*/
+}
+
+.blog-post-button4:hover {
+    color: var(--dark-color);
+    box-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-link {
+    color: var(--main-color);
+}
+
+.blog-post-spacer {
+    margin-bottom: 1rem;
+}
+
+.blog-post-spacer2 {
+    margin-top: 1rem;
+}
+
+.blog-post-div {
+    text-align: center;
+    margin: 0 auto;
+    /*margin-bottom: 1rem;*/
+}
+
+.blog-post-input {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.blog-post-input::placeholder {
+    color: var(--dark-color);
+}
+
+.blog-post-input:focus {
+    border: 2px solid var(--secondary-color); /* I would prefer this to be --secondary-color and the background color something lighter which the current theme doesn't have */
+    background-color: #EDD2A3; /* none of the provided colors works for this and it hurts my eyes (besides --light-color, which is the default color) */
+    /* #EDD2A3 is 50% lighter version of --secondary-color */
+}
+
+.blog-post-form-group {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.blog-post-card-container {
+    padding: 1rem;
+    background-color: #333333;
+    box-shadow: 0 0 0.5rem 0 var(--secondary-color); /* to make a true outline with border-radius might need new container which is slightly bigger */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post-card {
+    background-color: #333333;
+    border: 0;
+}
+
+.blog-post-flexbox {
+    display: flex;
+}
+
+.blog-post-card-thumbnail {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 33.3333%;
+}
+
+.blog-post-card-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post-card-text-container {
+    color: var(--light-color);
+}
+
+.blog-post-card-text-container p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.blog-post-card-text-container2 {
+    color: var(--light-color);
+}
+
+.blog-post-card-text-container2 p {
+    margin-bottom: 0;
+}
+
+.blog-post-card-button-container {
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.blog-post-card-button-container2 {
+    padding-top: 1rem;
+    /*text-align: center;*/
+    margin-top: auto;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.blog-post-card-button-container-left {
+    text-align: left;
+}
+
+.blog-post-card-button-container-right {
+    text-align: right;
+}
+
+.blog-post-no-padding {
+    padding: 0;
+}
+
+.blog-post-modal-content {
+    background-color: #333333;
+    border: 0;
+    box-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-modal-header {
+    border-bottom: 0;
+}
+
+.blog-post-close {
+    color: var(--light-color);
+    text-shadow: 0px 0px 0.5rem var(--dark-color);
+}
+
+.blog-post-modal-footer {
+    border-top: 0;
+}
+
+.blog-post-hide {
+    display: none;
+}
+
+.blog-post-alert {
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.blog-post-alert-text {
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog-post-alert-fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.25s linear;
+    transition: opacity 0.25s linear;
+}
+
+.blog-post-alert-fade.in {
+    opacity: 1;
+}
+
+/* END BLOG POST */
+
+/*.btn-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-group {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.right-group {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}*/
+
+/* END BLOG POST */

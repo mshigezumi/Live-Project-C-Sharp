@@ -1,0 +1,68 @@
+﻿@model TheatreCMS3.Areas.Blog.Models.BlogPost
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="blog-post-div">
+    <h2 class="blog-post-header">Edit Blog Post</h2>
+</div>
+
+@using (Html.BeginForm("Edit", "BlogPost", FormMethod.Post, new { @class = "blog-post-form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <!--
+        <h4>BlogPost</h4>
+        <hr />
+        -->
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.BlogPostId)
+
+        <div class="blog-post-form-group">
+            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label" })
+            <div class="blog-post-div">
+                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control blog-post-input" } })
+                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="blog-post-form-group">
+            @Html.LabelFor(model => model.Content, htmlAttributes: new { @class = "control-label" })
+            <div class="blog-post-div">
+                <!-- this should probably be a text field instead so it's easier to write/edit the text of the blog post -->
+                @Html.EditorFor(model => model.Content, new { htmlAttributes = new { @class = "form-control blog-post-input" } })
+                @Html.ValidationMessageFor(model => model.Content, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="blog-post-form-group">
+            @Html.LabelFor(model => model.Posted, htmlAttributes: new { @class = "control-label" })
+            <div class="blog-post-div">
+                @Html.EditorFor(model => model.Posted, new { htmlAttributes = new { @class = "form-control blog-post-input" } })
+                @Html.ValidationMessageFor(model => model.Posted, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="blog-post-form-group">
+            @Html.LabelFor(model => model.Author, htmlAttributes: new { @class = "control-label" })
+            <div class="blog-post-div">
+                @Html.EditorFor(model => model.Author, new { htmlAttributes = new { @class = "form-control blog-post-input" } })
+                @Html.ValidationMessageFor(model => model.Author, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-10 blog-post-div">
+            <input type="submit" value="Save" class="btn btn-default blog-post-button blog-post-spacer" />
+        </div>
+
+        <div class="blog-post-div col-md-10">
+            @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-default blog-post-button2" })
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
