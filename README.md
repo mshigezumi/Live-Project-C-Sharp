@@ -2,7 +2,7 @@
  
 ## Introduction:
 
-For the last two weeks with the Tech Academy I worked on a Live Project in C# which simulated a real world work environment in which I worked with my peers and staff to do work on a website for an actual customer. We used ASP.NET MVC with Bootstrap 4 and Entity Framework to help create the website. I worked on a variety of stories with most of them focusing on the BlogPost section of the website. Below are some code snippets of the stories I worked on, full code files are also available in this repository.
+For the last two weeks with the Tech Academy, I worked on a Live Project in C# which simulated a real-world work environment in which I worked with my peers and staff to do work on a website for an actual customer. We used ASP.NET MVC with Bootstrap 4 and Entity Framework to help create the website. I worked on a variety of stories with most of them focusing on the BlogPost section of the website. Below are some code snippets of the stories I worked on, full code files are also available in this repository.
 
 ## Pages and Stories:
 
